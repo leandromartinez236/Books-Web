@@ -14,9 +14,9 @@
     <!-- NAVIGATION -->
     <header class="container-header">
       <nav class="navigation">
-        <a href="#" class="logo">good<span>reads</span></a>
+        <a href="#home" class="logo">good<span>reads</span></a>
         <ul id="navigation-items">
-          <li class="item"><a class="link" href="#">Home</a></li>
+          <li class="item"><a class="link" href="#home">Home</a></li>
           <li class="item"><a class="link" href="#about">About</a></li>
           <li class="item"><a class="link" href="#reviews">Reviews</a></li>
           <li class="item"><a class="link" href="#mybooks">My Books</a></li>
@@ -36,7 +36,7 @@
     </header>
 
     <!-- HERO -->
-    <div>
+    <div id="home">
       <section class="container grid-hero">
         <div class="hero-info">
           <h1>Libros: Portales a Otros Mundos</h1>
@@ -55,12 +55,13 @@
     </div>
 
     <!-- MAIN -->
-    <main id="main" class="main container" style="padding: 60px 0px">
+    <main id="main" class="container-main container">
       <header class="header-section">
         <h2 class="title-section">Lo más Vendido</h2>
+        <a href="#">Ver Todos</a>
       </header>
-      <div class="main-grid">
-        <article class="main-card">
+      <div class="grid-books main-grid">
+        <article class="card-book">
           <img src="./images/Popular/book-1.jpg" alt="photo" />
           <div class="content">
             <h3>Rich Dad, Poor Dad</h3>
@@ -68,40 +69,182 @@
             <p>$20</p>
           </div>
         </article>
-        <article class="main-card">
-          <img src="./images/Popular/book-2.jpg" alt="photo" />
+        <article class="card-book">
+          <img src="./images/Popular/book-2.jpg" alt="Hábitos Atómicos" />
           <div class="content">
             <h3>Hábitos Atómicos</h3>
             <h4>Clear James</h4>
             <p>$16</p>
           </div>
         </article>
-        <article class="main-card">
-          <img src="./images/Popular/book-3.jpg" alt="photo" />
+        <article class="card-book">
+          <img
+            src="./images/Popular/book-3.jpg"
+            alt="El Poder De Las Palabras"
+          />
           <div class="content">
             <h3>El Poder De Las Palabras</h3>
             <h4>Sigman Mariano</h4>
             <p>$14</p>
           </div>
         </article>
-        <article class="main-card">
-          <img src="./images/Popular/book-4.jpg" alt="photo" />
+        <article class="card-book">
+          <img
+            src="./images/Popular/book-4.jpg"
+            alt="los siete maridos de evelyn hugo"
+          />
           <div class="content">
             <h3>los siete maridos de evelyn hugo</h3>
             <h4>Jenkins Reid Taylor</h4>
             <p>$13</p>
           </div>
         </article>
-        <article class="main-card">
-          <img src="./images/Popular/book-5.jpg" alt="photo" />
+        <article class="card-book">
+          <img src="./images/Popular/book-5.jpg" alt="El Problema Final" />
           <div class="content">
             <h3>El Problema Final</h3>
             <h4>Perez Reverte</h4>
             <p>$20</p>
           </div>
         </article>
+        <article class="card-book">
+          <img src="./images/Popular/book-6.webp" alt="deshacer la ansiedad" />
+          <div class="content">
+            <h3>deshacer la ansiedad</h3>
+            <h4>judson brewer</h4>
+            <p>$20</p>
+          </div>
+        </article>
+        <article class="card-book">
+          <img src="./images/Popular/book-7.webp" alt="silence" />
+          <div class="content">
+            <h3>silence</h3>
+            <h4>Flor m. salvador</h4>
+            <p>$16</p>
+          </div>
+        </article>
       </div>
     </main>
+    <!--  -->
+
+    <!-- CATEGORIES SECTION-->
+    <section class="container category-section">
+      <header class="header-section">
+        <h2 class="title-section">Tematicas Destacadas</h2>
+        <a href="#">Ver Todos</a>
+      </header>
+      <div class="swiper category-slider MySwiper">
+        <div class="swiper-wrapper category-container">
+          <a
+            href="#ciencia"
+            class="swiper-slide box-category box-category-ciencia"
+          >
+            <span class="title-category">Ciencia Ficción</span>
+          </a>
+          <a
+            href="#terror"
+            class="swiper-slide box-category box-category-terror"
+          >
+            <span class="title-category">Terror</span>
+          </a>
+          <a
+            href="#romance"
+            class="swiper-slide box-category box-category-romance"
+          >
+            <span class="title-category">Romance</span>
+          </a>
+          <a
+            href="#cuento"
+            class="swiper-slide box-category box-category-cuento"
+          >
+            <span class="title-category">Cuento</span>
+            <!-- Cuento -->
+          </a>
+          <a
+            href="#novela"
+            class="swiper-slide box-category box-category-novela"
+          >
+            <span class="title-category">Novela</span>
+          </a>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <!--  -->
+
+    <!-- FICCION SECTION -->
+    <section id="ciencia" class="container-ciencia container">
+      <header class="header-section">
+        <h2 class="title-section">Ficcion</h2>
+        <a href="#">Ver Todos</a>
+      </header>
+      <div class="grid-books ciencia-grid">
+        <article class="card-book">
+          <img src="./images/Ciencia/soy-leyenda.jpg" alt="Soy Leyenda" />
+          <div class="content">
+            <h3>Soy Leyenda</h3>
+            <h4>Richard Matheson</h4>
+            <p>$13</p>
+          </div>
+        </article>
+        <article class="card-book">
+          <img src="./images/Ciencia/dune.jpg" alt="Dune" />
+          <div class="content">
+            <h3>Dune</h3>
+            <h4>Frank Herbert</h4>
+            <p>$20</p>
+          </div>
+        </article>
+        <article class="card-book">
+          <img src="./images/Ciencia/yo-robot.webp" alt="Yo Robot" />
+          <div class="content">
+            <h3>Yo Robot</h3>
+            <h4>Isaac Asimov</h4>
+            <p>$20</p>
+          </div>
+        </article>
+        <article class="card-book">
+          <img
+            src="./images/Ciencia/cronicas-marcianas.jpg"
+            alt="Crónicas Marcianas"
+          />
+          <div class="content">
+            <h3>Crónicas Marcianas</h3>
+            <h4>Ray Bradbury</h4>
+            <p>$16</p>
+          </div>
+        </article>
+        <article class="card-book">
+          <img src="./images/Ciencia/el-infierno.jpg" alt="El Infierno" />
+          <div class="content">
+            <h3>El Infierno</h3>
+            <h4>Carmen Mola</h4>
+            <p>$14</p>
+          </div>
+        </article>
+        <article class="card-book">
+          <img
+            src="./images/Ciencia/sangre-padre.jpg"
+            alt="los siete maridos de evelyn hugo"
+          />
+          <div class="content">
+            <h3>los siete maridos de evelyn hugo</h3>
+            <h4>Alfonso Goizueta</h4>
+            <p>$13</p>
+          </div>
+        </article>
+        <article class="card-book">
+          <img src="./images/Ciencia/el-marciano.jpg" alt="El Marciano" />
+          <div class="content">
+            <h3>El Marciano</h3>
+            <h4>Andy Weir</h4>
+            <p>$20</p>
+          </div>
+        </article>
+      </div>
+    </section>
     <!--  -->
 
     <!-- SECTION 2 -->
@@ -140,8 +283,7 @@
               stroke-linecap="round"
               stroke-linejoin="round"
               stroke-width="2"
-              d="M3 10a7 7 0 1 0 14 0a7 7 0
-          1 0-14 0m18 11l-6-6"
+              d="M3 10a7 7 0 1 0 14 0a7 7 0 1 0-14 0m18 11l-6-6"
             />
           </svg>
           <h3>Book Browser</h3>
@@ -153,47 +295,162 @@
         </article>
       </section>
     </div>
+    <!--  -->
 
-    <!-- CATEGORIES SECTION-->
-    <section class="container category-section">
+    <!-- TERROR SECTION -->
+    <section id="terror" class="container-terror container">
       <header class="header-section">
-        <h2 class="title-section">Tematicas Destacadas</h2>
+        <h2 class="title-section">Terror</h2>
+        <a href="#">Ver Todos</a>
       </header>
-      <div class="swiper category-slider MySwiper">
-        <div class="swiper-wrapper category-container">
-          <div class="swiper-slide box-category box-category-adventure">
-            <h2 class="title-category">Aventuras</h2>
+      <div class="grid-books terror-grid">
+        <article class="card-book">
+          <img src="./images/Terror/it.webp" alt="It" />
+          <div class="content">
+            <h3>It</h3>
+            <h4>Stephen King</h4>
+            <p>$13</p>
           </div>
-          <div class="swiper-slide box-category box-category-ciencia">
-            <h2 class="title-category">Ciencia Ficción</h2>
+        </article>
+        <article class="card-book">
+          <img src="./images/Terror/el-monje.webp" alt="El Monje" />
+          <div class="content">
+            <h3>El Monje</h3>
+            <h4>Matthew Lewis</h4>
+            <p>$20</p>
           </div>
-          <div class="swiper-slide box-category box-category-terror">
-            <h2 class="title-category">Terror</h2>
+        </article>
+        <article class="card-book">
+          <img src="./images/Terror/el-exorcista.webp" alt="El Exorcista" />
+          <div class="content">
+            <h3>El Exorcista</h3>
+            <h4>William Peter Blatty</h4>
+            <p>$20</p>
           </div>
-          <div class="swiper-slide box-category box-category-romance">
-            <h2 class="title-category">Romance</h2>
+        </article>
+        <article class="card-book">
+          <img src="./images/Terror/chica-gris.webp" alt="La Chica Gris" />
+          <div class="content">
+            <h3>La Chica Gris</h3>
+            <h4>Antonio Runa</h4>
+            <p>$16</p>
           </div>
-          <div class="swiper-slide box-category box-category-cuento">
-            <h2 class="title-category">Cuento</h2>
+        </article>
+        <article class="card-book">
+          <img src="./images/Terror/casa-infernal.jpg" alt="La Casa Infernal" />
+          <div class="content">
+            <h3>La Casa Infernal</h3>
+            <h4>Richard Matheson</h4>
+            <p>$14</p>
           </div>
-          <div class="swiper-slide box-category box-category-mitologia">
-            <h2 class="title-category">Mitología</h2>
+        </article>
+        <article class="card-book">
+          <img
+            src="./images/Terror/fin-de-los-dias.webp"
+            alt="El Fin De Los Dias"
+          />
+          <div class="content">
+            <h3>El Fin De Los Dias</h3>
+            <h4>Adam L. G. Nevill</h4>
+            <p>$13</p>
           </div>
-          <div class="swiper-slide box-category box-category-fabula">
-            <h2 class="title-category">Fábula</h2>
+        </article>
+        <article class="card-book">
+          <img src="./images/Terror/carrie.webp" alt="Carrie" />
+          <div class="content">
+            <h3>Carrie</h3>
+            <h4>Stephen King</h4>
+            <p>$20</p>
           </div>
-          <div class="swiper-slide box-category box-category-novela">
-            <h2 class="title-category">Novela</h2>
-          </div>
-          <div class="swiper-slide box-category box-category-policial">
-            <h2 class="title-category">Policial</h2>
-          </div>
-        </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
+        </article>
       </div>
     </section>
+    <!--  -->
+
+    <!-- ROMANCE SECTION -->
+    <section id="romance" class="container-romance container">
+      <header class="header-section">
+        <h2 class="title-section">Romance</h2>
+        <a href="#">Ver Todos</a>
+      </header>
+      <div class="grid-books romance-grid">
+        <article class="card-book">
+          <img
+            src="./images/Romance/bajo-la-misma-estrella.jpg"
+            alt="Bajo la misma Estrella"
+          />
+          <div class="content">
+            <h3>Bajo la misma Estrella</h3>
+            <h4>John Green</h4>
+            <p>$13</p>
+          </div>
+        </article>
+        <article class="card-book">
+          <img
+            src="./images/Romance/nosotros-en-la-luna.jpg"
+            alt="Nosotros en la luna"
+          />
+          <div class="content">
+            <h3>Nosotros en la luna</h3>
+            <h4>Alice Kellen</h4>
+            <p>$20</p>
+          </div>
+        </article>
+        <article class="card-book">
+          <img
+            src="./images/Romance/romeo-julieta.webp"
+            alt="Romeo y julieta"
+          />
+          <div class="content">
+            <h3>Romeo y julieta</h3>
+            <h4>William Shakespeare</h4>
+            <p>$20</p>
+          </div>
+        </article>
+        <article class="card-book">
+          <img
+            src="./images/Romance/mi-vida.webp"
+            alt="Por el resto de mi vida"
+          />
+          <div class="content">
+            <h3>Por el resto de mi vida</h3>
+            <h4>María Border</h4>
+            <p>$16</p>
+          </div>
+        </article>
+        <article class="card-book">
+          <img
+            src="./images/Romance/hombre-al-mando.webp"
+            alt="un hombre al mando"
+          />
+          <div class="content">
+            <h3>un Hombre al mando</h3>
+            <h4>Paige Laurelin</h4>
+            <p>$14</p>
+          </div>
+        </article>
+        <article class="card-book">
+          <img
+            src="./images/Romance/luces-olvidadas.webp"
+            alt="Luces Olvidadas"
+          />
+          <div class="content">
+            <h3>Luces Olvidadas</h3>
+            <h4>Stephanie Noelle</h4>
+            <p>$13</p>
+          </div>
+        </article>
+        <article class="card-book">
+          <img src="./images/Romance/nick.webp" alt="Nick y Charlie" />
+          <div class="content">
+            <h3>Nick y Charlie</h3>
+            <h4>Alice oseman</h4>
+            <p>$20</p>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!--  -->
 
     <!-- HARRY POTTER -->
     <div class="potter-bg">
@@ -249,8 +506,158 @@
         </div>
       </section>
     </div>
-
     <!--  -->
+
+    <!-- CUENTO SECTION -->
+    <section id="cuento" class="container-cuento container">
+      <header class="header-section">
+        <h2 class="title-section">Cuento</h2>
+        <a href="#">Ver Todos</a>
+      </header>
+      <div class="grid-books cuento-grid">
+        <article class="card-book">
+          <img src="./images/Cuento/book-1.webp" alt="El cuento fantasma" />
+          <div class="content">
+            <h3>El cuento fantasma</h3>
+            <h4>Jaime gamboa</h4>
+            <p>$13</p>
+          </div>
+        </article>
+        <article class="card-book">
+          <img src="./images/Cuento/book-2.webp" alt="El cuento tradicional" />
+          <div class="content">
+            <h3>El cuento tradicional</h3>
+            <h4>Anónimo</h4>
+            <p>$20</p>
+          </div>
+        </article>
+        <article class="card-book">
+          <img src="./images/Cuento/book-3.webp" alt="El zoo de joaquin" />
+          <div class="content">
+            <h3>El zoo de joaquin</h3>
+            <h4>Pablo Bernasconi</h4>
+            <p>$20</p>
+          </div>
+        </article>
+        <article class="card-book">
+          <img src="./images/Cuento/book-4.webp" alt="Ponqué y otros cuentos" />
+          <div class="content">
+            <h3>Ponqué y otros cuentos</h3>
+            <h4>carolina sanín</h4>
+            <p>$16</p>
+          </div>
+        </article>
+        <article class="card-book">
+          <img src="./images/Cuento/book-5.webp" alt="Larga distancia" />
+          <div class="content">
+            <h3>Larga distancia</h3>
+            <h4>tali goldman</h4>
+            <p>$5,80</p>
+          </div>
+        </article>
+        <article class="card-book">
+          <img src="./images/Cuento/book-6.webp" alt="El hada cristina" />
+          <div class="content">
+            <h3>El hada cristina</h3>
+            <h4>césar aglas</h4>
+            <p>$13</p>
+          </div>
+        </article>
+        <article class="card-book">
+          <img src="./images/Cuento/book-7.webp" alt="Matilda" />
+          <div class="content">
+            <h3>Matilda</h3>
+            <h4>roald dahl</h4>
+            <p>$20</p>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!--  -->
+
+    <!-- NOVELA SECTION -->
+    <section id="novela" class="container-novela container">
+      <header class="header-section">
+        <h2 class="title-section">Novela</h2>
+        <a href="#">Ver Todos</a>
+      </header>
+      <div class="grid-books novela-grid">
+        <article class="card-book">
+          <img src="./images/Novela/book-1.webp" alt="las mil y una noches" />
+          <div class="content">
+            <h3>las mil y una noches</h3>
+            <h4>florence langevin</h4>
+            <p>$13</p>
+          </div>
+        </article>
+        <article class="card-book">
+          <img src="./images/Novela/book-2.webp" alt="divina comedia" />
+          <div class="content">
+            <h3>divina comedia</h3>
+            <h4>dante alighieri</h4>
+            <p>$20</p>
+          </div>
+        </article>
+        <article class="card-book">
+          <img
+            src="./images/Novela/book-3.webp"
+            alt="Don quijote de la mancha"
+          />
+          <div class="content">
+            <h3>Don quijote de la mancha</h3>
+            <h4>Miguel de Cervantes</h4>
+            <p>$20</p>
+          </div>
+        </article>
+        <article class="card-book">
+          <img src="./images/Novela/book-4.webp" alt="Madame Bovary" />
+          <div class="content">
+            <h3>Madame Bovary</h3>
+            <h4>flaubert gustave</h4>
+            <p>$16</p>
+          </div>
+        </article>
+        <article class="card-book">
+          <img src="./images/Novela/book-5.webp" alt="grandes esperanzas" />
+          <div class="content">
+            <h3>grandes esperanzas</h3>
+            <h4>Dickens Charles</h4>
+            <p>$14</p>
+          </div>
+        </article>
+        <article class="card-book">
+          <img src="./images/Novela/book-6.webp" alt="La señora Dalloway" />
+          <div class="content">
+            <h3>La señora Dalloway</h3>
+            <h4>Virgina woolf</h4>
+            <p>$13</p>
+          </div>
+        </article>
+        <article class="card-book">
+          <img src="./images/Novela/book-7.webp" alt="Anna Karenina" />
+          <div class="content">
+            <h3>Anna Karenina</h3>
+            <h4>Tolstoi lev</h4>
+            <p>$20</p>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!--  -->
+
+    <!-- FOOTER -->
+    <footer>
+      <nav class="footer-navigation">
+        <ul class="footer-navigation-items">
+          <li class="item"><a class="link" href="#home">Home</a></li>
+          <li class="item"><a class="link" href="#about">About</a></li>
+          <li class="item"><a class="link" href="#reviews">Reviews</a></li>
+          <li class="item"><a class="link" href="#mybooks">My Books</a></li>
+        </ul>
+      </nav>
+    </footer>
+    <!--  -->
+
     <!-- scripts -->
     <script src="./js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -258,6 +665,7 @@
       const harrySwiper = new Swiper(".harrySwiper", {
         effect: "cards",
         grabCursor: true,
+        loop: true,
       });
       const swiper = new Swiper(".MySwiper", {
         // Optional parameters
@@ -265,23 +673,19 @@
         grabCursor: true,
         spaceBetween: 30,
         // slidesPerView: 2,
-        // If we need pagination
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
         },
-        //Breakpoints
         breakpoints: {
           768: {
             slidesPerView: 3,
           },
         },
-        // Navigation arrows
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
-        // And if we need scrollbar
         scrollbar: {
           el: ".swiper-scrollbar",
         },

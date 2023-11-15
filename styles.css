@@ -60,25 +60,38 @@ span {
   color: var(--color-700);
 }
 .title-section {
-  /* color: var(--color-700); */
   text-transform: uppercase;
   color: #303030;
-  text-align: center;
+  text-align: start;
 }
 .header-section {
   margin: 16px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+.header-section a {
+  font-size: 14px;
+  color: var(--color-700);
+  transition: all 0.3s;
+}
+.header-section a:hover {
+  border-bottom: 1px solid;
+  color: var(--color-500);
 }
 .container {
   max-width: 90%;
   margin: 0 auto;
-  padding: 60px 0px;
+  padding-top: 60px;
+  /* padding: 60px 0px; */
 }
 .btn {
   border: 1px solid #eee;
   border-radius: 20px;
   font-size: 12px;
   padding: 10px 16px;
-  /* padding: 8px 16px 4px 16px; */
   cursor: pointer;
 }
 .swiper-button-next,
@@ -87,7 +100,6 @@ span {
   position: absolute !important;
   top: 45% !important;
 }
-
 .swiper-button-next,
 .swiper-rtl,
 .swiper-button-prev,
@@ -104,6 +116,7 @@ span {
 .swiper-pagination {
   position: initial !important;
 }
+
 /* NAVIGATION */
 .container-header {
   background-color: #eee;
@@ -144,6 +157,7 @@ span {
   font-size: 20px;
   color: var(--black);
 }
+
 /* NAVIGATION ITEMS */
 #navigation-items {
   display: flex;
@@ -170,7 +184,6 @@ span {
   gap: 12px;
 }
 .btn-login {
-  /* font-size: 14px; */
   background-color: transparent;
   border: 1px solid var(--color-700);
   color: var(--color-700);
@@ -250,42 +263,46 @@ span {
 }
 
 /* MAIN */
-
-.main-grid {
+.container-main {
+  padding-top: 60px;
+}
+.grid-books {
   margin-top: 32px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
   gap: 16px;
 }
-.main-card h3 {
-  /* font-size: 14px; */
+.card-book {
+  /* padding: 4px; */
+  border-radius: 4px;
+  overflow: hidden;
+  transition: background-color 0.3s;
+}
+.card-book:hover img {
+  transform: scale(1.02);
+}
+.card-book .content {
+  padding: 4px;
+}
+.card-book h3 {
+  font-size: 14px;
   color: var(--color-700);
 }
-.main-card h4 {
-  font-size: 14px;
+.card-book h4 {
+  font-size: 12px;
   color: gray;
 }
-.main-card p {
+.card-book p {
+  display: none;
   margin-top: 4px;
-  /* font-weight: 600; */
+  font-size: 10px;
 }
-.main-card img {
+.card-book img {
+  object-fit: cover;
   cursor: pointer;
   width: 100%;
   aspect-ratio: 2/3;
   transition: transform 0.3s;
-}
-@media (max-width: 500px) {
-  .main-card {
-    display: flex;
-    gap: 12px;
-  }
-  .main-card img {
-    width: 50%;
-  }
-}
-.main-card .content {
-  padding: 8px 0px;
 }
 
 /* CATEGORY SECTION */
@@ -294,6 +311,7 @@ span {
   padding: 24px 0px !important;
 }
 .box-category {
+  cursor: pointer;
   overflow: hidden;
   border-radius: 20px;
   min-height: 120px;
@@ -302,8 +320,9 @@ span {
   opacity: 0.7;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.208);
 }
-.box-category-adventure {
-  background: linear-gradient(var(--deg), #e27c00, #ffc71b);
+.box-category span {
+  color: #fff;
+  font-size: 1.2rem;
 }
 .box-category-ciencia {
   background: linear-gradient(var(--deg), #00b800, #29fe1d);
@@ -315,30 +334,27 @@ span {
   background: linear-gradient(var(--deg), #920a0a, #ff2323);
 }
 .box-category-cuento {
+  cursor: pointer;
   background: linear-gradient(var(--deg), #ad00b1, #ff54f6);
-}
-.box-category-mitologia {
-  background: linear-gradient(var(--deg), #454545, #808080);
 }
 .box-category-novela {
   background: linear-gradient(var(--deg), #68921e, #9acd32);
-}
-.box-category-policial {
-  background: linear-gradient(var(--deg), #0000ff, #5676ff);
-}
-.box-category-fabula {
-  background: linear-gradient(var(--deg), #e18b00, #ffd500);
 }
 .box-category h2 {
   color: #fff;
   text-align: center;
 }
-.title-category {
-}
+
+/* CIENCIA SECTION */
+
+/* TERROR SECTION */
+
+/* ROMANCE SECTION */
 
 /* HARRY POTTER */
 .potter-bg {
-  background-image: url(./images/Harry-Potter/wallapaper.jpg);
+  margin-top: 60px;
+  background-image: url(./images/Harry-Potter/wallapaper.jpg) !important;
   background-repeat: no-repeat;
   background-size: cover;
   object-fit: cover;
@@ -347,11 +363,11 @@ span {
 .section-potter {
   max-width: 80%;
   height: 100%;
+  padding: 60px 0px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   align-items: center;
-  /*  */
 }
 .harrySwiper {
   max-width: 214px !important;
@@ -383,6 +399,24 @@ span {
   font-weight: bold;
   color: #fff;
 }
+/*  */
+
+/* FOOTER */
+footer {
+  margin-top: 60px;
+  background-color: var(--color-500);
+  padding: 60px;
+}
+.footer-navigation {
+}
+.footer-navigation-items {
+}
+.item {
+}
+.link {
+}
+
+/*  */
 
 /* MEDIA QUERY */
 @media (max-width: 768px) {
