@@ -407,16 +407,24 @@ footer {
   background-color: var(--color-500);
   padding: 60px;
 }
-.footer-navigation {
-}
 .footer-navigation-items {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
 }
-.item {
+@media (max-width: 350px) {
+  footer {
+    padding: 30px;
+  }
+  .footer-navigation-items {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
 }
-.link {
+.footer-navigation-items .link {
+  color: #fff;
 }
-
-/*  */
 
 /* MEDIA QUERY */
 @media (max-width: 768px) {
@@ -492,7 +500,6 @@ footer {
     gap: 48px;
   }
   .harrySwiper {
-    /* max-height: 150px !important; */
     max-width: 130px !important;
   }
 }
