@@ -2,6 +2,7 @@ const toggle = document.getElementById('btn-burger')
 const navbar = document.getElementById('navigation-items')
 
 toggle.onclick = () => {
+  console.log('toggle');
   toggle.classList.toggle('active')
   navbar.classList.toggle('active')
 }
